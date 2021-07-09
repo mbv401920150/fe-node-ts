@@ -1,0 +1,18 @@
+{
+  "name": "02-basics",
+  "version": "1.0.0",
+  "description": "Bases for NodeJS with TypeScript",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "base3": "nodemon 01-use-fs.ts --base 3 --log true"
+  },
+  "author": "Michael Bolanos",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.0.2",
+    "@types/yargs": "^17.0.2"
+  },
+  "dependencies": {
+    "yargs": "^17.0.1"
+  }
+}
