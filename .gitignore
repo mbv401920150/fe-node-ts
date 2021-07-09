@@ -1,2 +1,4 @@
-node_modules/
-output/*.txt
+01-start/node_modules/
+02-basics/node_modules/
+
+02-basics/output/*.txt
