@@ -3,41 +3,53 @@ require('module-alias/register')
 import chalk from 'chalk';
 
 import { saveDb } from '@/helpers/databaseMethods';
-import { inquirerMenu, menuOption, question } from '@/helpers/inquirer';
+import { inquirerMenu, listTasksToComplete, listTaskToDelete, MenuOption, question, QuestionType } from '@/helpers/inquirer';
 import { TaskStatus, Tasks } from '@/models/tasks';
 
 console.clear();
 
 const main = async () => {
-    let opt: menuOption;
+    let opt: MenuOption;
     const tasks = new Tasks();
     do {
         opt = await inquirerMenu();
 
         switch (opt) {
-            case menuOption.taskNew:
+            case MenuOption.taskNew:
                 const description = await question(`Add the description of the new task:`);
                 tasks.createTask(description);
 
                 break;
-            case menuOption.taskViewAll:
+            case MenuOption.taskViewAll:
                 tasks.listTasks(TaskStatus.all);
                 break;
-            case menuOption.taskViewCompleted:
+            case MenuOption.taskViewCompleted:
                 tasks.listTasks(TaskStatus.completed);
                 break;
-            case menuOption.taskViewPending:
+            case MenuOption.taskViewPending:
                 tasks.listTasks(TaskStatus.pending);
                 break;
-            case menuOption.taskComplete:
+            case MenuOption.taskComplete:
+                const ids = await listTasksToComplete(tasks.list);
+                
+                if(ids.length > 0)
+                    tasks.completeTasks(ids);
+
                 break;
-            case menuOption.taskDelete:
+            case MenuOption.taskDelete:
+                const id = await listTaskToDelete(tasks.list);
+                if (id !== '0' && await question(`Do you want to proceed with the deletion?`, QuestionType.confirm)) {
+                    tasks.deleteTask(id);
+                    console.warn(chalk`\n{yellow.bold The task was deleted}\n`);
+                }
+
+                break;
         }
-    } while (opt !== menuOption.exit);
+    } while (opt !== MenuOption.exit);
 
     saveDb(tasks.list)
 
-    question(chalk`Press {green.bold ENTER} to finish the app`, false);
+    await question(chalk`Press {green.bold ENTER} to finish the app`, QuestionType.input, false);
 }
 
 main();

@@ -2,21 +2,21 @@
   {
     "id": "ea68617c-d9f6-4a17-a1dc-36cb4b50bcd2",
     "desc": "TypeScript",
-    "completedAt": "2021-08-08"
+    "completedAt": null
   },
   {
     "id": "6e65ae7c-e437-4ea4-9cd5-3b6ce790d73f",
     "desc": "NodeJS",
-    "completedAt": null
+    "completedAt": "2021-07-11T00:17:15.616Z"
   },
   {
     "id": "84a68f2c-11ff-41f1-b7fb-335f8e72f297",
     "desc": "MongoDB",
-    "completedAt": null
+    "completedAt": "2021-07-11T00:16:54.267Z"
   },
   {
     "id": "66e35b63-f431-4459-a124-d2481c279c89",
     "desc": ".Net Core",
-    "completedAt": null
+    "completedAt": "2021-07-11T00:17:30.197Z"
   }
 ]

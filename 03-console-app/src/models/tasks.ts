@@ -1,4 +1,5 @@
 import { readDb } from '@/helpers/databaseMethods';
+import { listTaskToDelete } from '@/helpers/inquirer';
 import Task from '@/models/task';
 import chalk from 'chalk';
 
@@ -18,6 +19,10 @@ class Tasks {
 
     public get list(): Array<Task> {
         return this._tasks;
+    }
+
+    public deleteTask(id: string) {
+        this._tasks = this._tasks.filter(t => t.id !== id);
     }
 
     public listTasks(status: TaskStatus = TaskStatus.all): void {
@@ -41,12 +46,24 @@ class Tasks {
         console.log();
     }
 
-    createTask(description: string) {
+    public createTask(description: string) {
         const newTask = new Task(description);
         this._tasks.push(newTask);
     }
 
+    public completeTasks(completedTasks: Array<string>) {
+        this._tasks = this._tasks.map(t => {
 
+            if (completedTasks.findIndex(completedId => t.id === completedId) >= 0) {
+                if (t.completedAt === null)
+                    t.completedAt = new Date();
+            }
+            else
+                t.completedAt = null;
+
+            return t;
+        });
+    }
 }
 
 export {
