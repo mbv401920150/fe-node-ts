@@ -1,0 +1,27 @@
+{
+  "name": "04-weather-app",
+  "version": "1.0.0",
+  "description": "Weather app with typescript and NodeJS",
+  "main": "app.ts",
+  "_moduleAliases": {
+    "@": "./"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node app.ts"
+  },
+  "author": "Michael Bolanos",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "class-transformer": "^0.4.0",
+    "dotenv": "^10.0.0",
+    "inquirer": "^8.1.1",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^7.3.3",
+    "@types/node": "^16.3.1"
+  }
+}

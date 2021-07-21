@@ -1,0 +1,52 @@
+[
+  {
+    "Id": "poi.472446422449",
+    "City": "Voltrak, Monterrey, Nuevo León 64520, México",
+    "Lng": -100.30748,
+    "Lat": 25.699802,
+    "Temp": 301.88,
+    "Max": 301.88,
+    "Min": 301.88,
+    "WeatherDescription": "overcast clouds"
+  },
+  {
+    "Id": "poi.833223658727",
+    "City": "Junko Temakeria, Praça Ns. de Fátima, 272-358, Praia Grande, São Paulo 11796, Brasil",
+    "Lng": -46.528365,
+    "Lat": -24.049296,
+    "Temp": 292.82,
+    "Max": 296.06,
+    "Min": 289.19,
+    "WeatherDescription": "clear sky"
+  },
+  {
+    "Id": "poi.498216294546",
+    "City": "Koala, Cabo Frío, Río de Janeiro 28906, Brasil",
+    "Lng": -42.013867,
+    "Lat": -22.88245,
+    "Temp": 291.72,
+    "Max": 294.15,
+    "Min": 291.21,
+    "WeatherDescription": "clear sky"
+  },
+  {
+    "Id": "poi.1065151906591",
+    "City": "Joop Outlet, Stadsweide 320-332, Roermond, Limburgo 6041 TD, Países Bajos",
+    "Lng": 5.990011,
+    "Lat": 51.198831,
+    "Temp": 290.79,
+    "Max": 292.74,
+    "Min": 288.27,
+    "WeatherDescription": "clear sky"
+  },
+  {
+    "Id": "place.12639872525274720",
+    "City": "San José, Provincia de San José, Costa Rica",
+    "Lng": -84.08333,
+    "Lat": 9.93333,
+    "Temp": 294.44,
+    "Max": 297.53,
+    "Min": 293.01,
+    "WeatherDescription": "broken clouds"
+  }
+]
