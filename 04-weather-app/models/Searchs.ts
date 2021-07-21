@@ -41,7 +41,7 @@ class Searchs {
                 lat: city.Lat,
                 lon: city.Lng,
                 appid: process.env.OPENWEATHER_TOKEN,
-                unit: 'metric',
+                units: 'metric',
                 lang: 'en'
             }
         });

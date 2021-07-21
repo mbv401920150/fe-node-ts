@@ -1,52 +1,52 @@
 [
   {
-    "Id": "poi.472446422449",
-    "City": "Voltrak, Monterrey, Nuevo León 64520, México",
-    "Lng": -100.30748,
-    "Lat": 25.699802,
-    "Temp": 301.88,
-    "Max": 301.88,
-    "Min": 301.88,
-    "WeatherDescription": "overcast clouds"
+    "Id": "neighborhood.297767",
+    "City": "Jamaica Estates, Nueva York, Nueva York 11432, Estados Unidos",
+    "Lng": -73.79,
+    "Lat": 40.72,
+    "Temp": 25.54,
+    "Max": 28.18,
+    "Min": 22.94,
+    "WeatherDescription": "haze"
   },
   {
-    "Id": "poi.833223658727",
-    "City": "Junko Temakeria, Praça Ns. de Fátima, 272-358, Praia Grande, São Paulo 11796, Brasil",
-    "Lng": -46.528365,
-    "Lat": -24.049296,
-    "Temp": 292.82,
-    "Max": 296.06,
-    "Min": 289.19,
-    "WeatherDescription": "clear sky"
-  },
-  {
-    "Id": "poi.498216294546",
-    "City": "Koala, Cabo Frío, Río de Janeiro 28906, Brasil",
-    "Lng": -42.013867,
-    "Lat": -22.88245,
-    "Temp": 291.72,
-    "Max": 294.15,
-    "Min": 291.21,
-    "WeatherDescription": "clear sky"
-  },
-  {
-    "Id": "poi.1065151906591",
-    "City": "Joop Outlet, Stadsweide 320-332, Roermond, Limburgo 6041 TD, Países Bajos",
-    "Lng": 5.990011,
-    "Lat": 51.198831,
-    "Temp": 290.79,
-    "Max": 292.74,
-    "Min": 288.27,
-    "WeatherDescription": "clear sky"
-  },
-  {
-    "Id": "place.12639872525274720",
-    "City": "San José, Provincia de San José, Costa Rica",
-    "Lng": -84.08333,
-    "Lat": 9.93333,
-    "Temp": 294.44,
-    "Max": 297.53,
-    "Min": 293.01,
+    "Id": "poi.566935715766",
+    "City": "Aloft Hotels, Forum 2 Business Park, Lindora, Radial A Santa Ana, Santa Ana, Provincia de San José, Costa Rica",
+    "Lng": -84.195271,
+    "Lat": 9.957,
+    "Temp": 24.54,
+    "Max": 25.36,
+    "Min": 23.11,
     "WeatherDescription": "broken clouds"
+  },
+  {
+    "Id": "poi.575525635197",
+    "City": "Galp Massamá Norte, Avenida José Régio, Belas, Región de Lisboa 2605-216, Portugal",
+    "Lng": -9.279164,
+    "Lat": 38.761386,
+    "Temp": 16.23,
+    "Max": 16.86,
+    "Min": 15.2,
+    "WeatherDescription": "few clouds"
+  },
+  {
+    "Id": "place.8630171346977270",
+    "City": "Belas, Región de Lisboa, Portugal",
+    "Lng": -9.2639,
+    "Lat": 38.7759,
+    "Temp": 16.65,
+    "Max": 17.28,
+    "Min": 15.62,
+    "WeatherDescription": "few clouds"
+  },
+  {
+    "Id": "poi.34359797455",
+    "City": "Sintra Terrace Tapas-Bar, Sintra-Cascais Natural Park, Miradouro da Ferraria 3, Sintra, Región de Lisboa 2710-623, Portugal",
+    "Lng": -9.389964,
+    "Lat": 38.796328,
+    "Temp": 16.01,
+    "Max": 16.71,
+    "Min": 15.05,
+    "WeatherDescription": "clear sky"
   }
 ]

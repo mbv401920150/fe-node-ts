@@ -37,7 +37,6 @@ const main = async () => {
                 break;
             case MenuOption.History:
                 const history = loadData();
-                console.log('HIS', { history });
                 await showCity(history, true);
 
                 break;

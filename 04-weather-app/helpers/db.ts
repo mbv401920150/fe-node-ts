@@ -15,8 +15,11 @@ const loadData = (): CityWeather[] => {
 }
 
 const saveData = (city: CityWeather): void => {
-    const cities = loadData();
+    // Avoid duplicate results into the new search and some entry previously stored
+    const cities = loadData().filter(c => c.Id !== city.Id);
+
     cities.unshift(city);
+    
     if (cities.length > 5) cities.pop();
 
     fs.writeFileSync(filePath, JSON.stringify(cities, null, 2));
