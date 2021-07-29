@@ -1,0 +1,26 @@
+{
+  "name": "05-web-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "_moduleAliases": {
+    "@": "./src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "module-alias": "^2.2.2",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.6"
+  }
+}
